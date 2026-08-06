@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Olumide Kamson - Founder, Sous</title>
+        <meta
+            name="description"
+            content="Olumide Kamson - Founder of Sous. Machine Learning engineer, First Class CS (Best Graduating Student)."
+        />
+        <meta property="og:title" content="Olumide Kamson - Founder, Sous" />
+        <meta
+            property="og:description"
+            content="Founder of Sous. Software engineer, First Class CS, Best Graduating Student."
+        />
+        <meta property="og:type" content="profile" />
+
+        <link
+            rel="icon"
+            type="image/svg+xml"
+            href="https://api.dicebear.com/9.x/thumbs/svg?seed=Olumide%20Kamson"
+        />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="styles.css" />
+
+        <!-- Inline and before the stylesheet's first paint, deliberately.
+             app.js is deferred, so setting the theme there would render one
+             frame of the wrong palette on every load. Reads the same key
+             app.js writes; falls through to prefers-color-scheme when nothing
+             has been chosen yet. -->
+        <script>
+            (function () {
+                try {
+                    var p = JSON.parse(
+                        localStorage.getItem("ok.prefs") || "{}",
+                    );
+                    if (
+                        ["light", "dark", "paper", "midnight-canvas"].indexOf(
+                            p.theme,
+                        ) > -1
+                    ) {
+                        document.documentElement.dataset.theme = p.theme;
+                    }
+                } catch (e) {
+                    /* first visit, private mode, or a wiped store */
+                }
+            })();
+        </script>
+
+        <script src="app.js" defer></script>
+    </head>
+    <body>
+        <!-- Drifting pixels, behind everything, midnight canvas only. Painted
+             by initPixels in app.js and only while that theme is chosen. -->
+        <canvas id="px" aria-hidden="true"></canvas>
+
+        <div class="controls" role="group" aria-label="Display settings">
+            <div class="select">
+                <select id="themeSel" aria-label="Theme"></select>
+                <svg
+                    class="chevrons"
+                    aria-hidden="true"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <path d="m7 15 5 5 5-5" />
+                    <path d="m7 9 5-5 5 5" />
+                </svg>
+            </div>
+            <div class="select">
+                <select id="langSel" aria-label="Language"></select>
+                <svg
+                    class="chevrons"
+                    aria-hidden="true"
+                    focusable="false"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                >
+                    <path d="m7 15 5 5 5-5" />
+                    <path d="m7 9 5-5 5 5" />
+                </svg>
+            </div>
+        </div>
+
+        <div class="wrap">
+            <header>
+                <div class="id">
+                    <img
+                        class="avatar"
+                        src="https://api.dicebear.com/9.x/thumbs/svg?seed=Olumide%20Kamson"
+                        alt="Olumide Kamson"
+                    />
+                    <div>
+                        <h1>Olumide Kamson</h1>
+                    </div>
+                </div>
+                <div class="intro">
+                    <p data-i18n="intro">
+                        Building
+                        <a
+                            href="https://sous.software"
+                            target="_blank"
+                            rel="noopener"
+                            >Sous</a
+                        >
+                    </p>
+                </div>
+            </header>
+
+            <section id="experience">
+                <h2 data-i18n="exp">Experience</h2>
+
+                <div class="item">
+                    <div class="body">
+                        <div class="pos">
+                            <span data-i18n="founder">Founder</span>
+                            <span class="co">· Sous</span>
+                        </div>
+                    </div>
+                    <div class="when" data-i18n="exp1_when">Aug 2026 - Now</div>
+                </div>
+
+                <div class="item">
+                    <div class="body">
+                        <div class="pos">
+                            <span data-i18n="mle"
+                                ><span class="mle-full"
+                                    >Machine Learning Engineer</span
+                                ><span class="mle-abbr">ML Engineer</span></span
+                            >
+                            <span class="co">· MTN</span>
+                        </div>
+                    </div>
+                    <div class="when" data-i18n="exp2_when">
+                        Sep 2021 - Dec 2025
+                    </div>
+                </div>
+            </section>
+
+            <section id="certifications">
+                <h2 data-i18n="certs">
+                    Certification(s) &amp; Contribution(s)
+                </h2>
+                <div class="item">
+                    <div class="body">
+                        <div class="pos">
+                            <svg
+                                class="icon"
+                                aria-hidden="true"
+                                focusable="false"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <circle cx="12" cy="8" r="6" />
+                                <path
+                                    d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"
+                                /></svg
+                            ><a
+                                class="cert-link"
+                                href="https://coursera.org/account/accomplishments/specialization/certificate/HRHFN6EBLHZQ"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Deep Learning Specialization, opens in a new tab"
+                                >Deep Learning Specialization<svg
+                                    class="link-icon"
+                                    aria-hidden="true"
+                                    focusable="false"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path d="M15 3h6v6" />
+                                    <path d="M10 14 21 3" />
+                                    <path
+                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"
+                                    /></svg
+                            ></a>
+                            <span class="co">· DeepLearning.AI</span>
+                        </div>
+                    </div>
+                    <div class="when">2021</div>
+                </div>
+                <div class="item">
+                    <div class="body">
+                        <div class="pos">
+                            <svg
+                                class="icon"
+                                aria-hidden="true"
+                                focusable="false"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <circle cx="12" cy="8" r="6" />
+                                <path
+                                    d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"
+                                /></svg
+                            ><a
+                                class="cert-link"
+                                href="https://credly.com/badges/d3535cc4-276f-4806-8249-a1aab8062e29"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Machine Learning Professional Certificate, opens in a new tab"
+                                >Machine Learning Professional Certificate<svg
+                                    class="link-icon"
+                                    aria-hidden="true"
+                                    focusable="false"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path d="M15 3h6v6" />
+                                    <path d="M10 14 21 3" />
+                                    <path
+                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"
+                                    /></svg
+                            ></a>
+                            <span class="co">· IBM</span>
+                        </div>
+                    </div>
+                    <div class="when">2021</div>
+                </div>
+                <div class="item">
+                    <div class="body">
+                        <div class="pos">
+                            <svg
+                                class="icon"
+                                aria-hidden="true"
+                                focusable="false"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <circle cx="12" cy="8" r="6" />
+                                <path
+                                    d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"
+                                /></svg
+                            ><a
+                                class="cert-link"
+                                href="https://triplebyte.com/tb/zyro-olumide-kamson-3md1yxk/certificate"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                aria-label="Engineering Certificate, opens in a new tab"
+                                >Engineering Certificate<svg
+                                    class="link-icon"
+                                    aria-hidden="true"
+                                    focusable="false"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                    stroke="currentColor"
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                >
+                                    <path d="M15 3h6v6" />
+                                    <path d="M10 14 21 3" />
+                                    <path
+                                        d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"
+                                    /></svg
+                            ></a>
+                            <span class="co">· Triplebyte</span>
+                        </div>
+                    </div>
+                    <div class="when">2021</div>
+                </div>
+                <div class="item">
+                    <div class="body">
+                        <div class="pos">
+                            <svg
+                                class="icon"
+                                aria-hidden="true"
+                                focusable="false"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <circle cx="12" cy="8" r="6" />
+                                <path
+                                    d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11"
+                                /></svg
+                            ><span data-i18n="cert_contributor"
+                                >Contributor</span
+                            >
+                            <span class="co">· Unsplash</span>
+                        </div>
+                        <div class="note" data-i18n="cert_unsplash_note">
+                            Open-licensed photography, 1,000+ views.
+                        </div>
+                    </div>
+                    <div class="when">2019</div>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2 data-i18n="education">Education</h2>
+                <div class="item">
+                    <div class="body">
+                        <div class="pos" data-i18n="edu_degree">
+                            B.Sc. Computer Science &amp; Mathematics
+                        </div>
+                        <div class="note">Crawford University</div>
+                        <span class="badge"
+                            ><svg
+                                class="icon"
+                                aria-hidden="true"
+                                focusable="false"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                            >
+                                <path
+                                    d="M7.21 15 2.66 7.14a2 2 0 0 1 .13-2.2L4.4 2.8A2 2 0 0 1 6 2h12a2 2 0 0 1 1.6.8l1.6 2.14a2 2 0 0 1 .14 2.2L16.79 15"
+                                />
+                                <path d="M11 12 5.12 2.2" />
+                                <path d="m13 12 5.88-9.8" />
+                                <path d="M8 7h8" />
+                                <circle cx="12" cy="17" r="5" />
+                                <path d="M12 18v-2h-.5" /></svg
+                            ><span data-i18n="edu_badge"
+                                >First Class · Best Graduating Student</span
+                            ></span
+                        >
+                    </div>
+                    <div class="when">2021</div>
+                </div>
+            </section>
+
+            <section id="reading">
+                <h2 data-i18n="reading">Recent reads</h2>
+                <!-- Rendered from PAPERS in app.js. Stacked: a second paper is a
+                     second entry, not a second turn of a carousel. -->
+                <div id="paper"></div>
+            </section>
+
+            <section id="elsewhere">
+                <h2 data-i18n="elsewhere">Elsewhere</h2>
+                <div class="links">
+                    <a
+                        href="https://github.com/ZyroGatsby"
+                        target="_blank"
+                        rel="noopener"
+                        >GitHub</a
+                    >
+                    <a
+                        href="mailto:zyro.kamson@gmail.com"
+                        data-i18n="link_email"
+                        >Email</a
+                    >
+                </div>
+            </section>
+
+            <section id="onmymind">
+                <h2 data-i18n="onmymind">On my mind</h2>
+                <blockquote id="quote"></blockquote>
+            </section>
+
+            <footer>© <span id="year"></span> Arc Social Limited</footer>
+        </div>
+    </body>
+</html>
