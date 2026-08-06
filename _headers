@@ -13,3 +13,6 @@
 
 /app.js
   Cache-Control: public, max-age=86400
+
+/theme-bootstrap.js
+  Cache-Control: public, max-age=86400

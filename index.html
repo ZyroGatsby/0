@@ -28,31 +28,11 @@
             rel="stylesheet"
         />
 
+        <!-- Runs before the stylesheet so a saved theme is present at first
+             paint. It is external because the site's CSP intentionally permits
+             only same-origin scripts, never inline JavaScript. -->
+        <script src="theme-bootstrap.js"></script>
         <link rel="stylesheet" href="styles.css" />
-
-        <!-- Inline and before the stylesheet's first paint, deliberately.
-             app.js is deferred, so setting the theme there would render one
-             frame of the wrong palette on every load. Reads the same key
-             app.js writes; falls through to prefers-color-scheme when nothing
-             has been chosen yet. -->
-        <script>
-            (function () {
-                try {
-                    var p = JSON.parse(
-                        localStorage.getItem("ok.prefs") || "{}",
-                    );
-                    if (
-                        ["light", "dark", "paper", "midnight-canvas"].indexOf(
-                            p.theme,
-                        ) > -1
-                    ) {
-                        document.documentElement.dataset.theme = p.theme;
-                    }
-                } catch (e) {
-                    /* first visit, private mode, or a wiped store */
-                }
-            })();
-        </script>
 
         <script src="app.js" defer></script>
     </head>
