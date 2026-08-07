@@ -59,14 +59,13 @@ const LINK_ICON =
 const EXTERNAL = (label, url) =>
   `<a href="${url}" target="_blank" rel="noopener noreferrer" aria-label="${label}, opens in a new tab">${label}${LINK_ICON}</a>`;
 const SOUS = (label) => EXTERNAL(label, "https://sous.software");
-const COMMERCE = (label) => EXTERNAL(label, "https://sous.social");
-const WHY = (label) => EXTERNAL(label, "https://ai.sous.social");
+const AI = (label) => EXTERNAL(label, "https://ai.sous.social");
 const SECONDARY = (label) => `<span class="intro-secondary">${label}</span>`;
 
 // content[lang][key]. Missing keys fall back to English.
 const I18N = {
   en: {
-    intro: `${SECONDARY("Building ")}${SOUS("Sous")}${SECONDARY(" &amp; the ")}${COMMERCE("Future of Commerce")}${SECONDARY(", ")}${WHY("here's why")}`,
+    intro: `${SECONDARY("Building ")}${SOUS("Sous")}${SECONDARY(" &amp; Thinking ")}${AI("Assistive Intelligence (AI)")}`,
     exp: "Experience",
     founder: "Founder",
     exp1_when: "Aug 2026 - Now",
@@ -115,7 +114,7 @@ const I18N = {
       "No retrieval, no fine-tuning",
   },
   fr: {
-    intro: `${SECONDARY("Je développe ")}${SOUS("Sous")}${SECONDARY(" et le ")}${COMMERCE("Future of Commerce")}${SECONDARY(", ")}${WHY("voici pourquoi")}`,
+    intro: `${SECONDARY("Je développe ")}${SOUS("Sous")}${SECONDARY(" et je réfléchis à ")}${AI("l’intelligence assistive (IA)")}`,
     exp: "Expérience",
     founder: "Fondateur",
     exp1_when: "août 2026 - aujourd'hui",
@@ -164,7 +163,7 @@ const I18N = {
       "Sans recherche documentaire, sans affinage",
   },
   es: {
-    intro: `${SECONDARY("Construyendo ")}${SOUS("Sous")}${SECONDARY(" y el ")}${COMMERCE("Future of Commerce")}${SECONDARY(", ")}${WHY("he aquí por qué")}`,
+    intro: `${SECONDARY("Construyendo ")}${SOUS("Sous")}${SECONDARY(" y pensando en la ")}${AI("inteligencia asistiva (IA)")}`,
     exp: "Experiencia",
     founder: "Fundador",
     exp1_when: "ago 2026 - ahora",
@@ -213,7 +212,7 @@ const I18N = {
       "Sin recuperación, sin ajuste fino",
   },
   it: {
-    intro: `${SECONDARY("Sto costruendo ")}${SOUS("Sous")}${SECONDARY(" e il ")}${COMMERCE("Future of Commerce")}${SECONDARY(", ")}${WHY("ecco perché")}`,
+    intro: `${SECONDARY("Sto costruendo ")}${SOUS("Sous")}${SECONDARY(" e pensando all’")}${AI("intelligenza assistiva (IA)")}`,
     exp: "Esperienza",
     founder: "Fondatore",
     exp1_when: "ago 2026 - oggi",
@@ -263,7 +262,7 @@ const I18N = {
       "Senza recupero, senza messa a punto",
   },
   de: {
-    intro: `${SECONDARY("Ich baue ")}${SOUS("Sous")}${SECONDARY(" und den ")}${COMMERCE("Future of Commerce")}${SECONDARY(", ")}${WHY("darum")}`,
+    intro: `${SECONDARY("Ich baue ")}${SOUS("Sous")}${SECONDARY(" und denke über ")}${AI("assistive Intelligenz (KI)")}${SECONDARY(" nach")}`,
     exp: "Erfahrung",
     founder: "Gründer",
     exp1_when: "Aug. 2026 - heute",
