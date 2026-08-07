@@ -1,6 +1,6 @@
 /* ---- themes ----
  * Four, chosen from the control top-right and remembered. data-theme is written
- * onto <html> by an inline script in <head> before first paint, so switching
+ * onto <html> by theme-bootstrap.js in <head> before first paint, so switching
  * never flashes the previous theme.
  *
  * The prefers-color-scheme block below is the no-JS and first-visit path only:
@@ -387,7 +387,11 @@ footer {
     pointer-events: none;
 }
 .intro a {
+    color: var(--strong);
     white-space: nowrap;
+}
+.intro-secondary {
+    color: var(--muted);
 }
 .link-icon {
     width: 0.82em;

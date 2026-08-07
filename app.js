@@ -56,13 +56,17 @@ const THEMES = [
 
 const LINK_ICON =
   '<svg class="link-icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h6v6"/><path d="M10 14 21 3"/><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h6"/></svg>';
-const SOUS = (label) =>
-  `<a href="https://sous.software" target="_blank" rel="noopener noreferrer" aria-label="${label}, opens in a new tab">${label}${LINK_ICON}</a>`;
+const EXTERNAL = (label, url) =>
+  `<a href="${url}" target="_blank" rel="noopener noreferrer" aria-label="${label}, opens in a new tab">${label}${LINK_ICON}</a>`;
+const SOUS = (label) => EXTERNAL(label, "https://sous.software");
+const COMMERCE = (label) => EXTERNAL(label, "https://sous.social");
+const WHY = (label) => EXTERNAL(label, "https://ai.sous.social");
+const SECONDARY = (label) => `<span class="intro-secondary">${label}</span>`;
 
 // content[lang][key]. Missing keys fall back to English.
 const I18N = {
   en: {
-    intro: `Building ${SOUS("Sous")}`,
+    intro: `${SECONDARY("Building ")}${SOUS("Sous")}${SECONDARY(" &amp; the ")}${COMMERCE("Future of Commerce")}${SECONDARY(", ")}${WHY("here's why")}`,
     exp: "Experience",
     founder: "Founder",
     exp1_when: "Aug 2026 - Now",
@@ -111,7 +115,7 @@ const I18N = {
       "No retrieval, no fine-tuning",
   },
   fr: {
-    intro: `Je développe ${SOUS("Sous")}`,
+    intro: `${SECONDARY("Je développe ")}${SOUS("Sous")}${SECONDARY(" et le ")}${COMMERCE("Future of Commerce")}${SECONDARY(", ")}${WHY("voici pourquoi")}`,
     exp: "Expérience",
     founder: "Fondateur",
     exp1_when: "août 2026 - aujourd'hui",
@@ -160,7 +164,7 @@ const I18N = {
       "Sans recherche documentaire, sans affinage",
   },
   es: {
-    intro: `Construyendo ${SOUS("Sous")}`,
+    intro: `${SECONDARY("Construyendo ")}${SOUS("Sous")}${SECONDARY(" y el ")}${COMMERCE("Future of Commerce")}${SECONDARY(", ")}${WHY("he aquí por qué")}`,
     exp: "Experiencia",
     founder: "Fundador",
     exp1_when: "ago 2026 - ahora",
@@ -209,7 +213,7 @@ const I18N = {
       "Sin recuperación, sin ajuste fino",
   },
   it: {
-    intro: `Sto costruendo ${SOUS("Sous")}`,
+    intro: `${SECONDARY("Sto costruendo ")}${SOUS("Sous")}${SECONDARY(" e il ")}${COMMERCE("Future of Commerce")}${SECONDARY(", ")}${WHY("ecco perché")}`,
     exp: "Esperienza",
     founder: "Fondatore",
     exp1_when: "ago 2026 - oggi",
@@ -259,7 +263,7 @@ const I18N = {
       "Senza recupero, senza messa a punto",
   },
   de: {
-    intro: `Ich baue ${SOUS("Sous")}`,
+    intro: `${SECONDARY("Ich baue ")}${SOUS("Sous")}${SECONDARY(" und den ")}${COMMERCE("Future of Commerce")}${SECONDARY(", ")}${WHY("darum")}`,
     exp: "Erfahrung",
     founder: "Gründer",
     exp1_when: "Aug. 2026 - heute",

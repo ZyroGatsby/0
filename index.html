@@ -15,11 +15,13 @@
         />
         <meta property="og:type" content="profile" />
 
-        <link
-            rel="icon"
-            type="image/svg+xml"
-            href="https://api.dicebear.com/9.x/thumbs/svg?seed=Olumide%20Kamson"
-        />
+        <!-- Safari desktop is aggressive about caching and is less reliable
+             with remote or SVG-only favicons. Keep a cache-busted local SVG,
+             PNG, and ICO set; the last two are the desktop fallbacks. -->
+        <link rel="icon" href="favicon.svg?v=4" type="image/svg+xml" sizes="any" />
+        <link rel="icon" href="favicon-32.png?v=4" type="image/png" sizes="32x32" />
+        <link rel="shortcut icon" href="favicon.ico?v=4" />
+        <link rel="apple-touch-icon" href="apple-touch-icon.png?v=4" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -92,13 +94,26 @@
                 </div>
                 <div class="intro">
                     <p data-i18n="intro">
-                        Building
+                        <span class="intro-secondary">Building </span>
                         <a
                             href="https://sous.software"
                             target="_blank"
                             rel="noopener"
                             >Sous</a
                         >
+                        <span class="intro-secondary"> &amp; the </span>
+                        <a
+                            href="https://sous.social"
+                            target="_blank"
+                            rel="noopener"
+                            >Future of Commerce</a
+                        ><span class="intro-secondary">, </span>
+                        <a
+                            href="https://ai.sous.social"
+                            target="_blank"
+                            rel="noopener"
+                            >here's why</a
+                        >.
                     </p>
                 </div>
             </header>
